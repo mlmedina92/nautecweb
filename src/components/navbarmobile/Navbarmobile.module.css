@@ -1,6 +1,7 @@
 .header_mobile{
     display: flex;
     background-color: green;
+    color:black;
 }
 
 @media(widht>768px){
