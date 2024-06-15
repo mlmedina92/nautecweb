@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: primary ;
-  src: url(src\assets\fonts\LEMONMILK-Regular.otf);
+  src: url(/src\assets\fonts\LEMONMILK-Regular.otf);
 }
 
 
 @font-face {
   font-family: secondary ;
-  src: url(src\assets\fonts\LEMONMILK-Medium.otf);
+  src: url(/src\assets\fonts\LEMONMILK-Medium.otf);
 } 
 *{
   margin: 0px;
