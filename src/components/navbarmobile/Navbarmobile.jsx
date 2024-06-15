@@ -1,24 +1,15 @@
 import styles from "./Navbarmobile.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function Navbarmobile() {
+export default function Navbarmobile({toggleSideBar}) {
   return (
     <header className={styles.header_mobile}>
-      <div>
-        <img src="" loading="lazy" alt="Logo Nautec" />
+      <div className={styles.subheader}>
+        <img className={styles.logo}src="Imagenes/Logo.png" loading="lazy" alt="Logo Nautec" />
       </div>
-      <div>
-        <GiHamburgerMenu />
+      <div className={styles.subheader}>
+        <GiHamburgerMenu className={styles.navmenu} onClick={toggleSideBar} />
       </div>
-      {/* <div>
-        <ul>Inicio</ul>
-        <ul>Servicios</ul>
-        <ul>Capacitación</ul>
-        <ul>Nosotros</ul>
-        <ul>Blog</ul>
-        <ul>Contacto</ul>
-        <ul>Soporte</ul>
-      </div> */}
     </header>
   );
 }

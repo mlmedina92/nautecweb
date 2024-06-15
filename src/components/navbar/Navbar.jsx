@@ -1,20 +1,25 @@
-import styles from './Navbar.module.css';
+import styles from "./Navbar.module.css";
 
-export default function Navbar (){
-    return (
-    <header>
-        <div>
-            <img src="" alt="" />
-        </div>
-        <div>
-            <ul>Inicio</ul>
-            <ul>Servicios</ul>
-            <ul>Capacitación</ul>
-            <ul>Nosotros</ul>
-            <ul>Blog</ul>
-            <ul>Contacto</ul>
-            <ul>Soporte</ul>
-        </div>
-
-    </header>)
+export default function Navbar() {
+  return (
+    <header className={styles.header_desktop}>
+      <div>
+        <img
+          className={styles.logo}
+          src="Imagenes/Logo.png"
+          loading="lazy"
+          alt="Logo Nautec"
+        />
+      </div>
+      <div className={styles.container}>
+        <ul className={styles.item}>Inicio</ul>
+        <ul className={styles.item}>Servicios</ul>
+        <ul className={styles.item}>Capacitación</ul>
+        <ul className={styles.item}>Nosotros</ul>
+        <ul className={styles.item}>Blog</ul>
+        <ul className={styles.item}>Contacto</ul>
+        <ul className={styles.item}>Soporte</ul>
+      </div>
+    </header>
+  );
 }
