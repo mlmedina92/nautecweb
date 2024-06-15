@@ -1,0 +1,10 @@
+.header_mobile{
+    display: flex;
+    background-color: green;
+}
+
+@media(widht>768px){
+    .header_mobile{
+        display: none;
+    }
+}
