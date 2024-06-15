@@ -4,6 +4,7 @@ import NavbarMobile from './components/navbarmobile/Navbarmobile';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
 import { useState } from 'react';
+import Home from './views/home/Home';
 
 function App() {
   // renderizado condicional
@@ -21,6 +22,11 @@ function App() {
         :
         <></>
       }
+
+      <Routes>
+      <Route path='/' element=  { <Home/> } />
+
+      </Routes>
 
     </div>
   );

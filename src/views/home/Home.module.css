@@ -1,0 +1,25 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.consulting{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
