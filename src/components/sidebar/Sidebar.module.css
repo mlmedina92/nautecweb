@@ -24,7 +24,7 @@
     font-size: 22px;
     padding: 16px;
     border-bottom: .1px solid rgb(48, 46, 46);
-    /* font-family: primary; */
+    font-family: primary;
 }
 .arrow{
     font-size: .8rem;
