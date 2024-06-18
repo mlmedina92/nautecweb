@@ -7,14 +7,13 @@ import { useState } from 'react';
 import Home from './views/home/Home';
 
 function App() {
-  // renderizado condicional
   const [isOpen, setIsOpen] = useState(false);
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
   }
 
   return (
-    <div className="App">
+    <div className={!isOpen ? "App" : "hidden"}>
       <NavbarMobile toggleSideBar={toggleSideBar} />
       <Navbar/>
       {isOpen ?
@@ -22,12 +21,9 @@ function App() {
         :
         <></>
       }
-
       <Routes>
       <Route path='/' element=  { <Home/> } />
-
       </Routes>
-
     </div>
   );
 }

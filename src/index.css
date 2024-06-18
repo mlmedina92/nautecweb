@@ -1,16 +1,20 @@
-
 @font-face {
-  font-family: primary ;
-  src: url(/src/assets/fonts/LEMONMILK-Regular.otf);
+  font-family: primary;
+  src: url(/src/assets/fonts/LEMONMILK-Light.otf);
 }
 
 
 @font-face {
-  font-family: secondary ;
-  src: url(/src/assets/fonts/LEMONMILK-Medium.otf);
-} 
+  font-family: secondary;
+  src: url(/src/assets/fonts/Righteous-Regular.ttf);
+}
 
-*{
+/* @font-face {
+  font-family: terciary;
+  src: url(/src/assets/fonts/LEMONMILK-Medium.otf);
+} */
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -30,10 +34,18 @@ code {
     monospace;
 }
 
-:root{
-  --primary-color:rgb(66, 169, 139);
-  --secondary-color:white;
-  --tercery-color:rgb(0, 0, 0);
-  --default-padding:0px 7rem;
+:root {
+  --primary-color: rgb(66, 169, 139);
+  --secondary-color: white;
+  --tercery-color: rgb(0, 0, 0);
+  --default-padding: 0px 7rem;
 
+  --default-bottom-padding: 3rem;
+  --primary-title-size: 3rem;
+  --secondary-title-size: 1.8rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--tercery-color);
 }

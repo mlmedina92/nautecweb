@@ -1,25 +1,130 @@
-.home{
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: var(--default-padding);
 }
 
-.services{
+.banner {
+    width: 100%;
+    max-width: 1360px;
+    padding-bottom: var(--default-bottom-padding);
+}
+
+.title {
+    color: var(--primary-color);
+    padding-bottom: var(--default-bottom-padding);
+    font-size: var(--primary-title-size);
+    font-family: secondary;
+    font-weight: lighter;
+}
+
+.services {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: var(--default-bottom-padding);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 277px;
+    margin: 0px 0rem 2rem 0rem;
+
+    .card_image {
+        width: 85%;
+        border-radius: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .card_title {
+        color: var(--primary-color);
+        text-align: center;
+        font-size: var(--secondary-title-size);
+        width: 85%;
+        height: 5.5rem;
+        font-family: secondary;
+        font-weight: lighter;
+    }
+
+    .card_p {
+        width: 70%;
+        text-align: center;
+        height: 5rem;
+        font-family: secondary;
+        font-weight: lighter;
+        opacity: 70%;
+    }
+
+    .card_button {
+        font-size: .75rem;
+        border: none;
+        background-color: var(--primary-color);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        font-family: primary;
+    }
+
+    .card_button:hover {
+        opacity: 80%;
+    }
 }
 
-.consulting{
+.consulting {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    padding-bottom: var(--default-bottom-padding);
+    max-width: 1360px;
+
+    .const_image {
+        width: 16.66%;
+        min-width: 190px;
+        height: 150px;
+        padding: 0px 24px 24px 24px;
+        object-fit: scale-down;
+    }
+}
+
+.why_us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: var(--default-bottom-padding);
+
+    .text {
+        width: 25vw;
+        min-width: 280px;
+        max-width: 400px;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: secondary;
+        font-weight: lighter;
+        opacity: 70%;
+    }
+}
+
+@media (width <=1024px) {
+    .home {
+        padding: 0;
+    }
+
+    .card {
+        width: 250px;
+    }
+}
+
+@media (width <=592px) {
+    .why_us {
+        .text {
+            min-width: 400px;
+        }
+    }
 }
