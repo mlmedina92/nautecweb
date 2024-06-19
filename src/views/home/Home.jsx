@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
                 <h1 className={styles.title}>Confían en Nosotros</h1>
                 <div>
-                    {/* <Carrousel></Carrousel> */}
+                    <Carrousel></Carrousel>
                 </div>
             </main>
         </div>
