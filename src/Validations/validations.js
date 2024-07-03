@@ -2,7 +2,7 @@ let errors = {}
 const onlyNumbers = /^[0-9]*$/
 const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/
 
-export function name(name) {
+export function nameCon(name) {
     if (name.length < 1) {
         errors = { ...errors, name: 'Llena este campo obligatorio' }
     } else {
@@ -11,7 +11,7 @@ export function name(name) {
     return errors
 }
 
-export function phone(phone) {
+export function phoneCon(phone) {
     if (phone.length < 1) {
         errors = { ...errors, phone: 'Llena este campo obligatorio' }
     } else if (!onlyNumbers.test(phone)) {
@@ -24,7 +24,7 @@ export function phone(phone) {
     return errors
 }
 
-export function email(email) {
+export function emailCon(email) {
     if (email.length < 1) {
         errors = { ...errors, email: 'Llena este campo obligatorio' }
     } else if (!regexEmail.test(email)) {
@@ -37,7 +37,7 @@ export function email(email) {
     return errors
 }
 
-export function preference(preference) {
+export function preferenceCon(preference) {
     if (preference.length < 1) {
         errors = { ...errors, preference: 'Llena este campo obligatorio' }
     } else {
