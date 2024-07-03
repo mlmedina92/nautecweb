@@ -1,0 +1,39 @@
+.recent {
+    display: flex;
+    cursor: pointer;
+}
+
+.image {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    margin-right: 1rem;
+    pointer-events: none;
+}
+
+.image img {
+    width: 100%;
+}
+
+.body {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: secondary;
+    gap: 1.5rem;
+    pointer-events: none;
+}
+
+.body p {
+    color: rgb(39, 39, 39);
+}
+
+.body span {
+    color: rgb(87, 87, 87);
+}
+
+@media (width>=1024) { 
+
+}

@@ -1,33 +1,35 @@
-.header_mobile{
+.header_mobile {
     position: sticky;
     top: 0px;
     display: flex;
-    color:black;
-    height: 100px ;
+    color: black;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
+    z-index: 99;
+    border-bottom: 1px rgb(214, 214, 214) solid;
+    margin-bottom: 1rem;
 }
 
-.logo{
-    height: 90px ;
-    margin: 0px 40px 0px 40px;
-
+.logo {
+    height: 90px;
 }
-.navmenu{
-    height: 90px ;
+
+.navmenu {
+    height: 90px;
     margin: 0px 40px 0px 40px;
     font-size: 1.5rem;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.navmenu:hover{
+.navmenu:hover {
     opacity: 50%;
 }
 
-@media(width>1024px){
-    .header_mobile{
+@media(width>1024px) {
+    .header_mobile {
         display: none;
     }
 }

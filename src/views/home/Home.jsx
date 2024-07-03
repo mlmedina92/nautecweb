@@ -1,8 +1,8 @@
-
 import styles from "./Home.module.css";
-import Carrousel from '../../components/carrousel/Carrousel'
+import Carrousel from "../../components/carrousel/Carrousel";
 
-export default function Home() {
+
+export default function Home({ handleViews }) {
     return (
         <div>
             <main className={styles.home}>
@@ -13,25 +13,25 @@ export default function Home() {
                         <img className={styles.card_image} src="Imagenes/Home/home/services/service-1.PNG" alt="card" />
                         <h2 className={styles.card_title}>Infraestructura</h2>
                         <p className={styles.card_p}>Soporte para servidores y estaciones de trabajo.</p>
-                        <button className={styles.card_button}>Más información</button>
+                        <button id="infraestructura" onClick={handleViews} className={styles.card_button}>Más información</button>
                     </div>
                     <div className={styles.card}>
                         <img className={styles.card_image} src="Imagenes/Home/home/services/service-2.PNG" alt="card" />
                         <h2 className={styles.card_title}>Monitoreo y Backup</h2>
                         <p className={styles.card_p}>Mantenga sus datos resguardados ante fallos.</p>
-                        <button className={styles.card_button}>Más información</button>
+                        <button id="monitoreo-backup" onClick={handleViews} className={styles.card_button}>Más información</button>
                     </div>
                     <div className={styles.card}>
                         <img className={styles.card_image} src="Imagenes/Home/home/services/service-3.PNG" alt="card" />
                         <h2 className={styles.card_title}>Management</h2>
                         <p className={styles.card_p}>Gerenciamiento IT integral de su departamento.</p>
-                        <button className={styles.card_button}>Más información</button>
+                        <button id="management" onClick={handleViews} className={styles.card_button}>Más información</button>
                     </div>
                     <div className={styles.card}>
                         <img className={styles.card_image} src="Imagenes/Home/home/services/service-4.PNG" alt="card" />
                         <h2 className={styles.card_title}>Software</h2>
                         <p className={styles.card_p}>Desarrollo de aplicaciones e integraciones a medida</p>
-                        <button className={styles.card_button}>Más información</button>
+                        <button id="software" onClick={handleViews} className={styles.card_button}>Más información</button>
                     </div>
                 </div>
                 <h1 className={styles.title}>Consultoría IT</h1>
@@ -62,10 +62,10 @@ export default function Home() {
                     <div><p className={styles.text}> Gracias a esto entendemos a la perfección las diferentes necesidades, reglamentaciones y políticas que se manejan, adaptando Nautec a sus necesidades.</p></div>
                 </div>
                 <h1 className={styles.title}>Confían en Nosotros</h1>
-                <div>
-                    <Carrousel></Carrousel>
-                </div>
             </main>
+            <div className={styles.carousel}>
+                <Carrousel></Carrousel>
+            </div>
         </div>
     );
 }

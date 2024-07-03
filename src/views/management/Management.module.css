@@ -1,0 +1,128 @@
+.presentation {
+    font-family: secondary;
+    font-weight: 400px;
+    color: rgb(87, 87, 87);
+    line-height: 1.5rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.management {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.title {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: secondary;
+    font-size: var(--primary-title-size);
+    margin-bottom: 3rem;
+    padding: 0rem 1rem;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding: var(--default-padding);
+    margin-bottom: 6rem;
+}
+
+.paragraph_service {
+    width: 50%;
+    font-family: secondary;
+    font-weight: 400px;
+    color: rgb(87, 87, 87);
+    line-height: 1.5rem;
+    padding: 0rem 1rem;
+}
+
+.paragraph_img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.subtitle {
+    margin-top: 1.5rem;
+}
+
+.container_end {
+    border-top: 1px grey solid;
+    border-bottom: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    font-family: secondary;
+    font-size: .8rem;
+    color: rgb(39, 39, 39);
+    margin: 0rem 1rem 6rem 1rem;
+    padding: 1rem 0rem;
+}
+
+.mail {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.phone {
+    color: rgb(87, 87, 87);
+}
+
+@media(width<768px) {
+    .services {
+        padding: 0px;
+    }
+
+    .presentation {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .paragraph_service {
+        width: 100%;
+        order: 2;
+    }
+
+    .paragraph_img {
+        overflow: hidden;
+        width: 100%;
+        order: 1;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .img_div {
+        width: 90%;
+    }
+
+    .container_end {
+        height: fit-content;
+    }
+
+}
+
+@media(width<1024px) {
+    .services {
+        padding: 0px;
+    }
+
+    .title {
+        font-size: 2rem;
+        padding: 0px;
+    }
+}

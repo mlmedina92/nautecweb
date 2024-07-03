@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    max-width: 300px;
+    height: 400px;
+    background-color: white;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.card_img {
+    overflow: hidden;
+    height: 45%;
+    pointer-events: none;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 58%;
+    padding: .5rem 1rem;
+    pointer-events: none;
+}
+
+.card_date {
+    color: rgb(111, 111, 111);
+    font-family: secondary;
+    font-size: .8rem;
+}
+
+.card_title {
+    font-family: secondary;
+    color: rgb(34, 34, 34);
+}
+
+.card_footer {
+    border-bottom: 1px rgb(111, 111, 111) solid;
+    color: rgb(111, 111, 111);
+    font-family: secondary;
+    pointer-events: all;
+}
+
+.card_footer:hover {
+    color: rgb(87, 87, 87);
+    border-bottom: 1px rgb(87, 87, 87) solid;
+}

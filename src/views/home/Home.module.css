@@ -3,13 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--default-padding);
 }
 
 .banner {
     width: 100%;
     max-width: 1360px;
     padding-bottom: var(--default-bottom-padding);
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .title {
@@ -17,7 +18,7 @@
     padding-bottom: var(--default-bottom-padding);
     font-size: var(--primary-title-size);
     font-family: secondary;
-    font-weight: lighter;
+    text-align: center;
 }
 
 .services {
@@ -48,7 +49,6 @@
         width: 85%;
         height: 5.5rem;
         font-family: secondary;
-        font-weight: lighter;
     }
 
     .card_p {
@@ -56,7 +56,6 @@
         text-align: center;
         height: 5rem;
         font-family: secondary;
-        font-weight: lighter;
         opacity: 70%;
     }
 
@@ -81,7 +80,8 @@
     align-items: center;
     justify-content: center;
     padding-bottom: var(--default-bottom-padding);
-    max-width: 1360px;
+    max-width: 1100px;
+
 
     .const_image {
         width: 16.66%;
@@ -106,9 +106,14 @@
         text-align: center;
         margin-bottom: 2rem;
         font-family: secondary;
-        font-weight: lighter;
         opacity: 70%;
     }
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (width <=1024px) {
@@ -119,12 +124,27 @@
     .card {
         width: 250px;
     }
+
+    .banner{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (width <=592px) {
     .why_us {
         .text {
-            min-width: 400px;
+            min-width: 330px;
         }
+    }
+
+    .card {
+        width: 70%;
+    }
+}
+
+@media (width <=450px) {
+    .card {
+        width: 100%;
     }
 }

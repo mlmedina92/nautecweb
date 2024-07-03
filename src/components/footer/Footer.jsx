@@ -5,7 +5,7 @@ export default function Footer({ handleViews }) {
         <footer className={styles.footer}>
             <p className={styles.copyright}>Copyright © 2023 Nautec. - Todos los derechos reservados.</p>
             <div className={styles.button_container}>
-                <ul id='home' className={styles.item} onClick={handleViews}>Inicio</ul>
+                <ul id='' className={styles.item} onClick={handleViews}>Inicio</ul>
                 <ul id='infraestructura' className={styles.item} onClick={handleViews}>Infraestructura</ul>
                 <ul id='monitoreo-backup' className={styles.item} onClick={handleViews}>Monitoreo y Backup</ul>
                 <ul id='management' className={styles.item} onClick={handleViews}>Management</ul>

@@ -2,12 +2,19 @@ import styles from "./Navbar.module.css";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar({ handleViews }) {
+  const location = useLocation()
+
   const [isOpen, setIsOpen] = useState(false);
-  // const [selectedOption, setSelectedOption] = useState(null);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleClick = (event) => {
+    isOpen && toggleDropdown()
+    handleViews(event)
+  }
 
   const options = [
     { name: "Infraestructura", route: "infraestructura" },
@@ -19,20 +26,26 @@ export default function Navbar({ handleViews }) {
     <header className={styles.header_desktop}>
       <div>
         <img
-          id="home"
+          id=""
           className={styles.logo}
           src="Imagenes/Logo.png"
           loading="lazy"
           alt="Logo Nautec"
-          onClick={handleViews}
+          onClick={handleClick}
         />
       </div>
       <div className={styles.container}>
-        <ul id="home" className={styles.item} onClick={handleViews}>Inicio</ul>
+
+        <ul
+          id=""
+          className={location.pathname === "/" ? styles.item_active : styles.item}
+          onClick={handleClick}>
+          Inicio
+        </ul>
 
 
         <div className={styles.dropdown_container}>
-          <ul className={styles.item} onClick={toggleDropdown}>
+          <ul id="services" className={styles.item} onClick={toggleDropdown}>
             Servicios
             {isOpen ? (
               <IoIosArrowUp className={styles.arrow} />
@@ -41,13 +54,13 @@ export default function Navbar({ handleViews }) {
             )}
           </ul>
           {isOpen && (
-            <ul className={styles.dropdown}>
+            <ul id="dropdown" className={styles.dropdown}>
               {options.map((option) => (
                 <li
-                  className={styles.subitem}
+                  className={location.pathname === `/${option.route}` ? styles.subitem_active : styles.subitem}
                   key={option.name}
                   id={option.route}
-                  onClick={handleViews}
+                  onClick={handleClick}
                 >
                   {option.name}
                 </li>
@@ -57,10 +70,30 @@ export default function Navbar({ handleViews }) {
         </div>
 
 
-        <ul id="capacitacion" className={styles.item} onClick={handleViews}>Capacitación</ul>
-        <ul id="nosotros" className={styles.item} onClick={handleViews}>Nosotros</ul>
-        <ul id="blog" className={styles.item} onClick={handleViews}>Blog</ul>
-        <ul id="contacto" className={styles.item} onClick={handleViews}>Contacto</ul>
+        <ul
+          id="capacitacion"
+          className={location.pathname === "/capacitacion" ? styles.item_active : styles.item}
+          onClick={handleClick}>
+          Capacitación
+        </ul>
+        <ul
+          id="nosotros"
+          className={location.pathname === "/nosotros" ? styles.item_active : styles.item}
+          onClick={handleClick}>
+          Nosotros
+        </ul>
+        <ul
+          id="blog"
+          className={location.pathname === "/blog" ? styles.item_active : styles.item}
+          onClick={handleClick}>
+          Blog
+        </ul>
+        <ul
+          id="contacto"
+          className={location.pathname === "/contacto" ? styles.item_active : styles.item}
+          onClick={handleClick}>
+          Contacto
+        </ul>
         <a href="https://soporte.nautec.com.ar/support/login" target="_blank">
           <ul className={styles.item}>Soporte</ul>
         </a>

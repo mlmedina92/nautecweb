@@ -62,10 +62,9 @@ export default function MonitoreoBackup() {
       </section>
 
       {/* banner */}
-
       <div className={styles.banner}>
         <img
-    
+
           src="/Imagenes/Servicios/Monitoreo_Backup/banner.png"
           alt="imagen banner"
           loading="lazy"
@@ -76,6 +75,7 @@ export default function MonitoreoBackup() {
           seguridad de sus clientes, brindándoles confianza y estabilidad.
         </h2>
       </div>
+      {/* banner */}
 
       <section className={styles.container}>
         <div className={styles.paragraph_img}>
@@ -138,8 +138,7 @@ export default function MonitoreoBackup() {
 
       <div className={styles.container_end}>
         <h2>
-          Deje su infraestructura en manos de expertos, sin preocuparse de los
-          recursos.
+          Garantice la seguridad de la información y la continuidad del negocio.
         </h2>
         <br />
         <br />

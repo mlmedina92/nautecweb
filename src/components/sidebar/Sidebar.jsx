@@ -22,7 +22,7 @@ export default function Sidebar({ toggleSideBar, handleViews }) {
         <IoCloseSharp />
       </div>
       <div className={styles.container}>
-        <ul id="home" className={styles.item} onClick={handleViews}>Inicio</ul>
+        <ul id="" className={styles.item} onClick={handleViews}>Inicio</ul>
         <div className="dropdown">
           <ul className={styles.item} onClick={toggleDropdown}>
             Servicios

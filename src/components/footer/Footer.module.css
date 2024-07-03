@@ -7,6 +7,7 @@
     min-height: 290px;
     width: 100%;
     background-color: var(--tercery-color);
+    z-index: 99;
 }
 
 .copyright {
@@ -14,7 +15,7 @@
     opacity: 60%;
     font-family: secondary;
     font-size: .8rem;
-    margin: 2rem 0rem;
+    padding: 2rem 1rem;
     letter-spacing: .1rem;
     text-align: center;
 }
@@ -45,5 +46,6 @@
 @media (width<630px) {
     .button_container {
         flex-direction: column;
+        padding: 0px;
     }
 }

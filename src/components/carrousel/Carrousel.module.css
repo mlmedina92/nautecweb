@@ -1,0 +1,19 @@
+.carousel{
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90px;
+    overflow: hidden;
+}
+
+.image img{
+    object-fit: scale-down;
+    height: 100%;
+    width: auto;
+}

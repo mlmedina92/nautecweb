@@ -4,6 +4,7 @@
     font-size: 2.3rem;
     padding-top: 1rem;
     cursor: pointer;
+    z-index: 99;
 }
 
 .close:hover {
@@ -33,6 +34,7 @@
     font-family: primary;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    color: white;
 }
 
 .item:hover {

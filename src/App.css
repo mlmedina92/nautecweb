@@ -1,7 +1,8 @@
-.hidden{
+.App {
+    min-width: 360px;
+}
+
+.hidden {
     height: 0px;
     overflow: hidden;
 }
-
-
-

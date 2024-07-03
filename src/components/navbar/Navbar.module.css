@@ -7,11 +7,14 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
+    z-index: 99;
+    border-bottom: 1px rgb(214, 214, 214) solid;
 }
 
 .logo {
     height: 90px;
     margin: 0px 40px 0px 40px;
+    cursor: pointer;
 }
 
 .container {
@@ -28,6 +31,13 @@
     transition: all .2s ease-in-out;
 }
 
+.item_active {
+    font-size: 1rem;
+    font-family: primary;
+    cursor: pointer;
+    border-bottom: 2px var(--primary-color) solid;
+}
+
 .item:hover {
     opacity: 50%;
 }
@@ -41,6 +51,19 @@
     font-family: secondary;
     font-weight: lighter;
     font-size: .90rem;
+}
+
+.subitem_active {
+    margin-left: 1rem;
+    list-style: none;
+    opacity: 100%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-family: secondary;
+    font-weight: lighter;
+    font-size: .90rem;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 .subitem:hover {
