@@ -16,7 +16,7 @@ import Capacitation from './views/capacitation/Capacitation'
 import Nosotros from './views/aboutus/Aboutus'
 import Blog from './views/blog/Blog'
 import Contact from './views/contact/Contact'
-
+import Success from './components/Success/Success';
 //Blog Entries
 import BlogEntry1 from './views/blogentri/1/Blogentri-1';
 import BlogEntry2 from './views/blogentri/2/Blogentri-2';
@@ -64,6 +64,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/blog' element={<Blog handleBlog={handleBlog} />} />
         <Route path='/contacto' element={<Contact />} />
+        <Route path='/mailer.php?' element={<Success handleViews={handleViews} />} />
 
         /* Blog  Entries*/
         <Route path='/proveedor-de-tecnologia-vs-socio-tecnologico' element={<BlogEntry3 handleViews={handleViews} />} />

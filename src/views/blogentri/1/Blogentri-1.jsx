@@ -75,7 +75,7 @@ export default function BlogEntry1({ handleViews }) {
                     />
                 </div>
             </div>
-            <div className={styles.form_container}>
+            {/* <div className={styles.form_container}>
                 <legend className={styles.subtitle}>Suscribirse</legend>
                 <form action="" className={styles.form}>
                     <div>
@@ -84,7 +84,7 @@ export default function BlogEntry1({ handleViews }) {
                     </div>
                     <button className={styles.btn_send} type="submit">Enviar</button>
                 </form>
-            </div>
+            </div> */}
         </div>
     )
 }

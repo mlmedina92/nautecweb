@@ -43,7 +43,7 @@ export default function Blog({ handleBlog }) {
 
                 </div>
             </div>
-
+{/* 
             <div className={styles.form_container}>
                 <legend className={styles.subtitle}>Suscribirse</legend>
                 <form action="" className={styles.form}>
@@ -53,7 +53,7 @@ export default function Blog({ handleBlog }) {
                     </div>
                     <button className={styles.btn_send} type="submit">Enviar</button>
                 </form>
-            </div>
+            </div> */}
 
         </div>
     )
