@@ -50,11 +50,11 @@ export default function Capacitation() {
             <div className={styles.form_container}>
                 <legend className={styles.title}>Comunícate con nosotros </legend>
                 <form action="mailer.php" className={styles.form}>
-                    <input onChange={handleChange} type="text" name="name" id="nameCap" placeholder='Nombre*' required />
+                    <input onChange={handleChange} type="text" name="nameCap" id="nameCap" placeholder='Nombre*' required />
                     {errors?.name ? <p className={styles.errMessage}>{errors.name}</p> : <></>}
-                    <input onChange={handleChange} type="tel" name="phone" id="phoneCap" placeholder='Teléfono*' required />
+                    <input onChange={handleChange} type="tel" name="phoneCap" id="phoneCap" placeholder='Teléfono*' required />
                     {errors?.phone ? <p className={styles.errMessage}>{errors.phone}</p> : <></>}
-                    <input onChange={handleChange} type="email" name="email" id="emailCap" placeholder='Correo electrónico*' required />
+                    <input onChange={handleChange} type="email" name="emailCap" id="emailCap" placeholder='Correo electrónico*' required />
                     {errors?.email ? <p className={styles.errMessage}>{errors.email}</p> : <></>}
                     <textarea name="message" id="messageCap" placeholder='Estoy interesado en'></textarea>
                     <button className={styles.btn_send} type="submit">Enviar</button>
