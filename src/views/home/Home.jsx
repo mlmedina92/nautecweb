@@ -42,7 +42,6 @@ export default function Home({ handleViews }) {
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-4.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-5.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-6.PNG" alt="Consultoria" loading="lazy" />
-                    <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-7.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-8.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-9.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-10.PNG" alt="Consultoria" loading="lazy" />
@@ -51,7 +50,6 @@ export default function Home({ handleViews }) {
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-13.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-14.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-15.PNG" alt="Consultoria" loading="lazy" />
-                    <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-16.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-17.PNG" alt="Consultoria" loading="lazy" />
                     <img className={styles.const_image} src="Imagenes/Home/home/consultoriait/const-it-18.PNG" alt="Consultoria" loading="lazy" />
                 </div>
