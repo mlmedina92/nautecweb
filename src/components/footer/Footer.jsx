@@ -14,7 +14,7 @@ export default function Footer({ handleViews }) {
                 <ul id='nosotros' className={styles.item} onClick={handleViews}>Nosotros</ul>
                 <ul id='blog' className={styles.item} onClick={handleViews}>Blog</ul>
                 <ul id='contacto' className={styles.item} onClick={handleViews}>Contacto</ul>
-                <a href="https://soporte.nautec.com.ar/support/login" target="_blank">
+                <a href="https://soporte.nautec.com.ar/support/login" target="_blank" rel="noreferrer">
                     <ul className={styles.item}>Soporte</ul>
                 </a>
             </div>

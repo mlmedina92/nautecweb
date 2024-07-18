@@ -66,11 +66,11 @@ function App() {
         <Route path='/contacto' element={<Contact />} />
         <Route path='/mailer.php?' element={<Success handleViews={handleViews} />} />
 
-        /* Blog  Entries*/
+        {/* Blog  Entries*/}
         <Route path='/proveedor-de-tecnologia-vs-socio-tecnologico' element={<BlogEntry3 handleViews={handleViews} />} />
         <Route path='/que-son-las-best-practice' element={<BlogEntry2 handleViews={handleViews} />} />
         <Route path='/nautec' element={<BlogEntry1 handleViews={handleViews} />} />
-        /* Blog  Entries*/
+       {/* Blog  Entries*/}
 
       </Routes>
       <Footer handleViews={handleViews} />

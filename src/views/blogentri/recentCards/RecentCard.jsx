@@ -7,7 +7,7 @@ export default function RecentCard({ id, img, title, date, handleViews }) {
                 {
                     img
                         ?
-                        <img src={img} alt="image" />
+                        <img src={img} alt={`image${id}`} />
                         :
                         <></>
                 }

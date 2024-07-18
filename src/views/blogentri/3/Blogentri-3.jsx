@@ -5,13 +5,13 @@ import { useState } from 'react';
 import * as validate from '../../../Validations/validations'
 
 export default function BlogEntry3({ handleViews }) {
-    const [errors, setErrors] = useState(false);
+    // const [errors, setErrors] = useState(false);
 
-    const handleChange = (event) => {
-        const property = event.target.name
-        const value = event.target.value
-        setErrors(validate[property](value))
-    }
+    // const handleChange = (event) => {
+    //     const property = event.target.name
+    //     const value = event.target.value
+    //     setErrors(validate[property](value))
+    // }
     return (
         <div className={styles.blogEntry}>
             <h1 className={styles.header}>Nautec Blog</h1>

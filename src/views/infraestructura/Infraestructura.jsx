@@ -226,6 +226,7 @@ export default function Infraestructura() {
           className={styles.mail}
           href="mailto:info@nautec.com.ar"
           target="_blank"
+          rel="noreferrer"
         >
           info@nautec.com.ar
         </a>

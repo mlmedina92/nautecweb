@@ -94,7 +94,7 @@ export default function Navbar({ handleViews }) {
           onClick={handleClick}>
           Contacto
         </ul>
-        <a href="https://soporte.nautec.com.ar/support/login" target="_blank">
+        <a href="https://soporte.nautec.com.ar/support/login" target="_blank" rel="noreferrer">
           <ul className={styles.item}>Soporte</ul>
         </a>
       </div>
