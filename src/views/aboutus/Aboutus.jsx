@@ -17,7 +17,7 @@ export default function AboutUs() {
 
                 </div>
                 <div className={styles.our_img}>
-                    <img src="Imagenes/About/about-1.png" alt="nosotros" loading='lazy' />
+                    <img src="/Imagenes/About/about-1.png" alt="nosotros" loading='lazy' />
                 </div>
             </div>
         </div>
